@@ -74,6 +74,7 @@
 .top__wrap {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .item1 {
@@ -92,6 +93,17 @@
   background-image: url(../img/topics-img3.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.top__wrap__item {
+  width : calc(100% / 3);
+}
+
+
+@media screen and (max-width: 480px) {
+  .top__wrap__item {
+    width: 100%;
+  }
 }
 
 .item__text-area {
